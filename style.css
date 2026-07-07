@@ -1,0 +1,40 @@
+@layer utilities {
+  /* Custom Color Palette Extension */
+  .bg-navy {
+    background-color: #132A45;
+  }
+  .bg-navy-dark {
+    background-color: #1E3A5F;
+  }
+  .text-navy-dark {
+    color: #1E3A5F;
+  }
+  .text-teal {
+    color: #14919B;
+  }
+  .bg-teal {
+    background-color: #14919B;
+  }
+  .bg-mint {
+    background-color: #EAF6F6;
+  }
+  .text-coral {
+    color: #E76F51;
+  }
+  .border-coral {
+    border-color: #E76F51;
+  }
+  .bg-coral-light {
+    background-color: #FDECE7;
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .scrollbar-none {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
