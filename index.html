@@ -35,329 +35,335 @@
     }
   </style>
 </head>
-<body class="bg-[#F6F9FA] text-gray-800 font-sans antialiased flex flex-col min-height-screen">
+<body class="bg-[#F6F9FA] text-gray-800 font-sans antialiased flex flex-col min-h-screen">
 
-  <!-- TOP ACCENT BAR -->
   <div class="bg-navy text-[#cfe0ee] text-xs">
     <div class="max-w-[1180px] mx-auto px-6 py-2 flex justify-end gap-[22px]">
-      <a href="#" class="no-underline text-[#cfe0ee] opacity-85 hover:opacity-100 transition-opacity">FAQ</a>
-      <a href="#" class="no-underline text-[#cfe0ee] opacity-85 hover:opacity-100 transition-opacity">Contact Us</a>
+      <a href="#" onclick="switchPage('my-health')" class="no-underline text-[#cfe0ee] opacity-85 hover:opacity-100 transition-opacity">Emergency Contacts</a>
+      <a href="#footer-contact" class="no-underline text-[#cfe0ee] opacity-85 hover:opacity-100 transition-opacity">Contact Us</a>
     </div>
   </div>
 
-  <!-- STICKY HEADER -->
   <header class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
     <div class="max-w-[1180px] mx-auto px-6 py-2.5 flex items-center justify-between gap-5">
-      <a href="#" onclick="switchPage('home')" class="flex items-center gap-3 text-current no-underline">
-        <!-- CUSTOM LOGO REPLACEMENT -->
+      <a href="#" onclick="switchPage('my-health')" class="flex items-center gap-3 text-current no-underline">
         <div class="w-[75px] h-[42px] flex items-center justify-center overflow-hidden rounded bg-gray-50 p-0.5 border border-gray-100">
-          <img src="Messenger_creation_9182CA06-23A1-4A5D-B832-B29C238AB8C3.jpeg" alt="MAPEH Portal Logo" class="w-full h-full object-contain">
+          <img src="mapehlogo.jpg" alt="MAPEH Portal Logo" class="w-full h-full object-contain">
         </div>
-        <span class="block">
+        <span>
           <div class="font-poppins text-base font-extrabold tracking-wide text-navy-dark">MAPEH | E-HEALTH PORTAL</div>
           <div class="text-xs text-gray-500 font-medium">Your Path to Wellness</div>
         </span>
       </a>
     </div>
     
-    <!-- NAVIGATION BAR -->
     <nav class="bg-navy-dark">
       <div id="nav-container" class="max-w-[1180px] mx-auto px-6 flex gap-0.5 overflow-x-auto whitespace-nowrap scrollbar-none">
-        <button onclick="switchPage('home')" data-page="home" class="nav-btn block px-5 py-3 text-white bg-teal no-underline text-[13px] font-semibold tracking-wider transition-colors">HOME</button>
-        <button onclick="switchPage('my-health')" data-page="my-health" class="nav-btn block px-5 py-3 text-[#dce8f2] no-underline text-[13px] font-semibold tracking-wider hover:bg-[#264C74] transition-colors">MY HEALTH</button>
+        <button onclick="switchPage('my-health')" data-page="my-health" class="nav-btn block px-5 py-3 text-white bg-teal no-underline text-[13px] font-semibold tracking-wider transition-colors">HOME &amp; MY HEALTH</button>
         <button onclick="switchPage('wellness-tips')" data-page="wellness-tips" class="nav-btn block px-5 py-3 text-[#dce8f2] no-underline text-[13px] font-semibold tracking-wider hover:bg-[#264C74] transition-colors">WELLNESS TIPS</button>
         <button onclick="switchPage('resources')" data-page="resources" class="nav-btn block px-5 py-3 text-[#dce8f2] no-underline text-[13px] font-semibold tracking-wider hover:bg-[#264C74] transition-colors">LEARNING RESOURCES</button>
-        <button onclick="switchPage('about')" data-page="about" class="nav-btn block px-5 py-3 text-[#dce8f2] no-underline text-[13px] font-semibold tracking-wider hover:bg-[#264C74] transition-colors">ABOUT US</button>
       </div>
     </nav>
   </header>
 
-  <!-- BREADCRUMBS -->
   <div class="max-w-[1180px] mx-auto px-6 pt-4 text-xs text-gray-500">
-    <a href="#" onclick="switchPage('home')" class="no-underline text-blue-600 font-semibold hover:underline">Home</a> 
+    <a href="#" onclick="switchPage('my-health')" class="no-underline text-blue-600 font-semibold hover:underline">Home</a> 
     <span id="breadcrumb-separator">/</span> 
-    <span id="breadcrumb-current">Mental Health Dashboard</span>
+    <span id="breadcrumb-current">Home &amp; My Health Dashboard</span>
   </div>
 
-  <!-- MAIN AREA CONTAINER -->
   <div class="flex-grow">
     
-    <!-- ================= PAGE 1: HOME (MENTAL HEALTH DEFAULT) ================= -->
-    <div id="page-home" class="page-section active">
-      <!-- HERO BANNER -->
+    <div id="page-my-health" class="page-section active">
+      
       <div class="max-w-[1132px] mx-auto mt-4 mx-6 xl:mx-auto rounded-2xl overflow-hidden bg-gradient-to-r from-[#1E3A5F] via-[#2B4F7E] to-[#5B4A8F] text-white">
         <div class="px-6 py-12 md:py-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-center md:text-left">
           <div class="flex flex-col items-center md:items-start">
-            <span class="inline-flex items-center gap-2 bg-white/15 px-3 py-1.5 rounded-full text-xs font-bold tracking-wider mb-4">🧠 MENTAL WELLNESS</span>
+            <span class="inline-flex items-center gap-2 bg-white/15 px-3 py-1.5 rounded-full text-xs font-bold tracking-wider mb-4">🧠 MENTAL WELLNESS HUB</span>
             <h1 class="font-poppins text-3xl md:text-4xl font-extrabold leading-tight mb-3">Understanding Mental Health</h1>
-            <p class="text-[15px] text-[#dce6f2] max-w-[480px] mb-6">Your mind deserves care too. Explore what mental health means, why it matters, and how to look after yours — and each other's.</p>
+            <p class="text-[15px] text-[#dce6f2] max-w-[480px] mb-6">Your mind deserves utmost care. Discover insights, track your daily health, and access local support lines right when you need them.</p>
             <div class="flex flex-wrap justify-center md:justify-start gap-3">
-              <a class="bg-white text-[#1E3A5F] px-5 py-2.5 rounded-lg font-bold text-[13.5px] no-underline hover:bg-gray-100 transition-colors shadow" href="#what-is">Start Learning</a>
-              <button onclick="switchPage('wellness-tips')" class="border-2 border-white/55 text-white px-5 py-2.5 rounded-lg font-bold text-[13.5px] no-underline hover:bg-white/10 transition-colors">See Self-Care Tips</button>
+              <a class="bg-white text-[#1E3A5F] px-5 py-2.5 rounded-lg font-bold text-[13.5px] no-underline hover:bg-gray-100 transition-colors shadow" href="#mental-info">Read Information</a>
+              <a href="#emergency-section" class="bg-red-500 text-white px-5 py-2.5 rounded-lg font-bold text-[13.5px] no-underline hover:bg-red-600 transition-colors shadow">Emergency Hotlines</a>
             </div>
           </div>
-          <div class="flex justify-center">
-            <svg class="w-[230px] h-[200px]" viewBox="0 0 230 200" fill="none">
-              <circle cx="115" cy="100" r="88" fill="rgba(255,255,255,0.08)"/>
-              <path d="M115 40c-30 0-52 22-52 48 0 20 12 34 22 42-2 8-6 14-12 18 12 3 22 0 30-6 4 1 8 1 12 1 30 0 52-22 52-48s-22-55-52-55z" fill="#fff" opacity="0.95"/>
-              <path d="M90 92c4-8 12-12 20-10M120 92c4-8 12-12 20-10" stroke="#7C5CBF" stroke-width="3" stroke-linecap="round"/>
-              <circle cx="98" cy="104" r="4" fill="#1E3A5F"/>
-              <circle cx="132" cy="104" r="4" fill="#1E3A5F"/>
-              <path d="M96 120c8 6 22 6 30 0" stroke="#1E3A5F" stroke-width="3" stroke-linecap="round"/>
-            </svg>
+          <div class="flex justify-center flex-col items-center">
+            <div class="bg-white p-1.5 rounded-xl max-w-[340px] shadow-md">
+              <img src="home.jpg" alt="Mental Health Awareness" class="w-full h-[180px] object-cover rounded-lg">
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- SPECTRUM BAR -->
-      <div class="max-w-[1180px] mx-auto px-6 mt-6">
-        <div class="bg-white rounded-xl p-[22px] border border-gray-200 shadow-sm text-center md:text-left">
-          <h4 class="font-poppins text-xs tracking-wider text-gray-500 font-bold mb-3.5 uppercase">How you might be feeling today</h4>
-          <div class="h-2.5 rounded-full bg-gradient-to-r from-[#3CB371] via-[#8FC93A] via-[#F2C94C] via-[#F2994A] via-[#E76F51] to-[#C0392B] mb-3.5"></div>
-          <div class="flex justify-between text-[11px] md:text-xs text-gray-500 font-semibold overflow-x-auto gap-2 whitespace-nowrap">
-            <span>Calm</span><span>Content</span><span>Uneasy</span><span>Stressed</span><span>Overwhelmed</span><span>In crisis</span>
+      <div class="max-w-[1180px] mx-auto px-6 mt-8">
+        <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm mb-8">
+          <h2 class="font-poppins text-lg font-bold text-navy-dark mb-4 flex items-center gap-2">📊 Personal Health Vital Trackers</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-mint rounded-xl p-5 text-center border border-teal/10">
+              <div class="text-3xl mb-1">💧</div>
+              <h3 class="font-poppins font-bold text-navy-dark text-base">Hydration Counter</h3>
+              <p class="text-xs text-gray-500 mb-3">Aim for 8 glasses daily</p>
+              <div class="text-2xl font-extrabold text-blue-600 mb-3"><span id="water-count">0</span> / 8</div>
+              <button onclick="addWater()" class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-4 py-2 rounded-lg transition-colors">+ Log a Glass</button>
+            </div>
+            <div class="bg-purple-50 rounded-xl p-5 text-center border border-purple-100">
+              <div class="text-3xl mb-1">🎭</div>
+              <h3 class="font-poppins font-bold text-navy-dark text-base">Daily Mood Check-in</h3>
+              <p class="text-xs text-gray-500 mb-3">How are you feeling right now?</p>
+              <div class="flex justify-center gap-2 mb-3">
+                <button onclick="logMood('😀')" class="text-2xl hover:scale-125 transition-transform">😀</button>
+                <button onclick="logMood('😐')" class="text-2xl hover:scale-125 transition-transform">😐</button>
+                <button onclick="logMood('🙁')" class="text-2xl hover:scale-125 transition-transform">🙁</button>
+                <button onclick="logMood('😰')" class="text-2xl hover:scale-125 transition-transform">😰</button>
+              </div>
+              <div class="text-xs text-gray-600 italic">Logged Status: <span id="mood-status" class="font-bold text-teal">None today</span></div>
+            </div>
           </div>
-          <p class="text-[12.5px] text-gray-500 mt-3">Wherever you are on this spectrum, it's valid — and support is always within reach. Scroll down for signs to watch for and where to turn.</p>
         </div>
       </div>
 
-      <!-- MAIN LAYOUT GRID -->
-      <div class="max-w-[1180px] mx-auto px-6 py-8 grid grid-cols-1 lg:grid-cols-3 gap-7 items-start">
-        <main class="lg:col-span-2 space-y-6">
-          <section class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm" id="what-is">
-            <h2 class="font-poppins text-xl font-bold text-navy-dark mb-3 flex items-center gap-2.5">
-              <svg class="w-6 h-6 flex-none stroke-teal" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 2a7 7 0 0 0-7 7c0 3 2 5 3 7 1 1.5 1 2 1 3h6c0-1 0-1.5 1-3 1-2 3-4 3-7a7 7 0 0 0-7-7Z"/><path d="M9 20h6M10 22h4"/></svg>
-              What is Mental Health?
-            </h2>
-            <p class="text-[14.5px] leading-relaxed mb-4">Mental health is a person's emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, make decisions, build relationships, and cope with challenges in everyday life. Good mental health is important at every stage of life, from childhood to adulthood.</p>
-            <a class="inline-flex items-center gap-1.5 text-[13px] font-bold text-blue-600 no-underline border-b border-transparent hover:border-blue-600" href="https://www.who.int/health-topics/mental-health" target="_blank" rel="noopener">Learn more on WHO.int →</a>
-          </section>
-
+      <div class="max-w-[1180px] mx-auto px-6 py-2 grid grid-cols-1 lg:grid-cols-3 gap-7 items-start">
+        
+        <main class="lg:col-span-2 space-y-6" id="mental-info">
+          
           <section class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
-            <h2 class="font-poppins text-xl font-bold text-navy-dark mb-3 flex items-center gap-2.5">
-              <svg class="w-6 h-6 flex-none stroke-blue-600" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6C19 16.5 12 21 12 21Z"/></svg>
-              Why is Mental Health Important?
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-1.5">
-              <div class="flex gap-2.5 items-start bg-mint p-3 rounded-lg text-[13.5px]"><svg class="w-[18px] h-[18px] flex-none text-teal mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l4 4 10-10"/></svg> Helps people manage stress and emotions.</div>
-              <div class="flex gap-2.5 items-start bg-mint p-3 rounded-lg text-[13.5px]"><svg class="w-[18px] h-[18px] flex-none text-teal mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l4 4 10-10"/></svg> Improves relationships with family and friends.</div>
-              <div class="flex gap-2.5 items-start bg-mint p-3 rounded-lg text-[13.5px]"><svg class="w-[18px] h-[18px] flex-none text-teal mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l4 4 10-10"/></svg> Increases focus, learning, and productivity.</div>
-              <div class="flex gap-2.5 items-start bg-mint p-3 rounded-lg text-[13.5px]"><svg class="w-[18px] h-[18px] flex-none text-teal mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l4 4 10-10"/></svg> Supports physical health and overall well-being.</div>
+            <h2 class="font-poppins text-xl font-bold text-navy-dark mb-4 border-b pb-2">🧠 Mental Health Fundamentals</h2>
+            
+            <div class="space-y-5">
+              <div>
+                <h3 class="font-bold text-teal text-base mb-1">1. What is Mental Health?</h3>
+                <p class="text-[14px] text-gray-600 leading-relaxed">Mental health includes our emotional, psychological, and social well-being. It directly impacts how we think, feel, react, handle stress, make life choices, and maintain interpersonal relationships throughout our life stages.</p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-teal text-base mb-1">2. Why is it Important?</h3>
+                <p class="text-[14px] text-gray-600 leading-relaxed">It is essential because it dictates physical resilience, boosts focus and study capability, balances emotional intelligence, and allows us to meaningfully connect and share with our local family or peers without burnout.</p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-teal text-base mb-1">3. How to Deal with it?</h3>
+                <p class="text-[14px] text-gray-600 leading-relaxed">Dealing with mental health friction requires clear, actionable coping mechanisms:</p>
+                <ul class="list-disc pl-5 mt-1 text-[13.5px] text-gray-600 space-y-1">
+                  <li><strong>Open Expression:</strong> Share your thoughts immediately with a trusted teacher, guidance counselor, or friend.</li>
+                  <li><strong>Paced Breathing:</strong> Slow down nervous responses using structural 4-second box breathing routines.</li>
+                  <li><strong>Healthy Routines:</strong> Protect dynamic hours for deep sleep and cut off high digital screen times before resting.</li>
+                </ul>
+              </div>
             </div>
           </section>
 
-          <section class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
-            <h2 class="font-poppins text-xl font-bold text-navy-dark mb-3 flex items-center gap-2.5">
-              <svg class="w-6 h-6 flex-none stroke-purple-600" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 3a3 3 0 0 0-3 3v.5A3.5 3.5 0 0 0 3 10a3.5 3.5 0 0 0 3 3.46V17a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z"/></svg>
-              Common Mental Health Conditions
-            </h2>
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3.5 mt-2">
-              <div class="border border-gray-200 rounded-xl p-4 text-center">
-                <h3 class="text-[13.5px] font-bold mb-1">Anxiety</h3>
-                <p class="text-xs text-gray-500 leading-tight">Constant worry, fear, or nervousness.</p>
-              </div>
-              <div class="border border-gray-200 rounded-xl p-4 text-center">
-                <h3 class="text-[13.5px] font-bold mb-1">Depression</h3>
-                <p class="text-xs text-gray-500 leading-tight">Persistent sadness and low energy.</p>
-              </div>
-              <div class="border border-gray-200 rounded-xl p-4 text-center">
-                <h3 class="text-[13.5px] font-bold mb-1">Stress</h3>
-                <p class="text-xs text-gray-500 leading-tight">Overwhelming pressure from life demands.</p>
-              </div>
-              <div class="border border-gray-200 rounded-xl p-4 text-center">
-                <h3 class="text-[13.5px] font-bold mb-1">Bipolar</h3>
-                <p class="text-xs text-gray-500 leading-tight">Extreme variations between emotional highs and lows.</p>
-              </div>
-            </div>
+          <section class="bg-emerald-50 border border-emerald-200 rounded-xl p-6 shadow-sm">
+            <h2 class="font-poppins text-lg font-bold text-emerald-900 mb-2 flex items-center gap-2">🛡️ Why Can You Trust Our Site?</h2>
+            <p class="text-[14px] text-emerald-800 leading-relaxed">
+              Ang aming platform ay dinisenyo sa ilalim ng gabay ng kurikulum ng <strong>MAPEH Health Component</strong>. Lahat ng payong medikal, tips, at links na narito ay kinuha mula sa mga opisyal na medical sheets gaya ng <em>World Health Organization (WHO)</em> at <em>Department of Health (DOH)</em>. Nilalayon nitong maging isang ligtas at verified na learning site para sa bawat mag-aaral.
+            </p>
           </section>
+
         </main>
 
-        <!-- SIDEBAR -->
-        <aside class="space-y-5">
-          <div class="bg-blue-600 text-white rounded-xl p-5 text-[13.5px] shadow-sm">
-            <h3 class="font-poppins font-bold text-sm mb-2.5 flex items-center gap-2">💡 Quick Tips</h3>
-            <ul class="list-disc pl-4.5 space-y-2">
-              <li>Momentarily stand up and stretch between long study sessions.</li>
-              <li>Write down one thing you're grateful for each day.</li>
-            </ul>
-          </div>
-          <div class="bg-emerald-600 text-white rounded-xl p-5 text-[13.5px] shadow-sm">
-            <h3 class="font-poppins font-bold text-sm mb-2 flex items-center gap-2">🧩 Health Trivia</h3>
-            <p class="leading-relaxed">1 in 8 people worldwide live with a mental health condition — you're never as alone as it feels.</p>
-          </div>
-        </aside>
-      </div>
-    </div>
-
-    <!-- ================= PAGE 2: MY HEALTH ================= -->
-    <div id="page-my-health" class="page-section">
-      <div class="max-w-[1180px] mx-auto px-6 py-8">
-        <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm mb-8">
-          <h1 class="font-poppins text-2xl font-extrabold text-navy-dark mb-2">My Health Tracker</h1>
-          <p class="text-sm text-gray-500">Monitor your daily vitals, track habits, and gain active insights into your day-to-day wellness journey.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm text-center">
-            <div class="text-3xl mb-2">💧</div>
-            <h3 class="font-poppins font-bold text-navy-dark text-lg">Hydration Counter</h3>
-            <p class="text-xs text-gray-500 mb-4">Aim for 8 glasses daily</p>
-            <div class="text-3xl font-extrabold text-blue-600 mb-4"><span id="water-count">0</span> / 8</div>
-            <button onclick="addWater()" class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-4 py-2 rounded-lg transition-colors">+ Log a Glass</button>
-          </div>
-
-          <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm text-center">
-            <div class="text-3xl mb-2">🎭</div>
-            <h3 class="font-poppins font-bold text-navy-dark text-lg">Daily Mood Check-in</h3>
-            <p class="text-xs text-gray-500 mb-4">How are you feeling right now?</p>
-            <div class="flex justify-center gap-2 mb-4">
-              <button onclick="logMood('😀')" class="text-2xl hover:scale-125 transition-transform">😀</button>
-              <button onclick="logMood('😐')" class="text-2xl hover:scale-125 transition-transform">😐</button>
-              <button onclick="logMood('🙁')" class="text-2xl hover:scale-125 transition-transform">🙁</button>
-              <button onclick="logMood('😰')" class="text-2xl hover:scale-125 transition-transform">😰</button>
+        <aside class="space-y-5" id="emergency-section">
+          <div class="bg-red-600 text-white rounded-xl p-5 shadow-sm">
+            <h3 class="font-poppins font-bold text-base mb-3 flex items-center gap-2">🚨 EMERGENCY HOTLINES</h3>
+            <div class="space-y-3 text-[13.5px]">
+              <div class="border-b border-white/20 pb-2">
+                <span class="block font-bold">National Mental Health Hotline:</span>
+                <span class="text-yellow-300 font-mono text-lg font-bold">1553</span> (Toll-Free)
+              </div>
+              <div class="border-b border-white/20 pb-2">
+                <span class="block font-bold">Caloocan Command Center:</span>
+                <span class="text-yellow-300 font-mono font-bold">(02) 888-22562</span>
+              </div>
+              <div>
+                <span class="block font-bold">Caloocan Red Cross:</span>
+                <span class="text-yellow-300 font-mono font-bold">(02) 336-5509</span>
+              </div>
             </div>
-            <div class="text-xs text-gray-600 italic">Logged Status: <span id="mood-status" class="font-bold text-teal">None today</span></div>
           </div>
 
           <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
-            <h3 class="font-poppins font-bold text-navy-dark text-base mb-3 flex items-center gap-2">📊 Dynamic Student Analytics</h3>
-            <div class="space-y-3 text-xs">
-              <div class="p-3 bg-mint rounded-lg text-gray-700">
-                <span class="font-bold text-navy-dark block">Activity Goal:</span> Keep up the continuous 30 minutes of intentional cardio today.
+            <h3 class="font-poppins font-bold text-navy-dark text-sm mb-3 uppercase tracking-wider">🏥 Hospitals in Caloocan</h3>
+            <div class="space-y-3.5 text-xs">
+              <div class="p-3 bg-gray-50 rounded-lg">
+                <span class="font-bold text-gray-800 block">Caloocan City Medical Center (CCMC)</span>
+                <span class="text-gray-500 block mt-0.5">📍 Mabini St., South Caloocan</span>
               </div>
-              <div class="p-3 bg-coral-light rounded-lg text-gray-700">
-                <span class="font-bold text-coral block">Sleep Reminder:</span> Teens need roughly 8-10 hours of sleep for peak cognitive recovery.
+              <div class="p-3 bg-gray-50 rounded-lg">
+                <span class="font-bold text-gray-800 block">Dr. Jose N. Rodriguez Memorial Hospital</span>
+                <span class="text-gray-500 block mt-0.5">📍 Tala, North Caloocan</span>
+              </div>
+              <div class="p-3 bg-gray-50 rounded-lg">
+                <span class="font-bold text-gray-800 block">Martinez General Hospital</span>
+                <span class="text-gray-500 block mt-0.5">📍 Mabini St., Maypajo, Caloocan</span>
+              </div>
+              <div class="p-3 bg-gray-50 rounded-lg">
+                <span class="font-bold text-gray-800 block">Nodado General Hospital</span>
+                <span class="text-gray-500 block mt-0.5">📍 Camarin Road, North Caloocan</span>
               </div>
             </div>
           </div>
-        </div>
+        </aside>
+
       </div>
     </div>
 
-    <!-- ================= PAGE 3: WELLNESS TIPS ================= -->
     <div id="page-wellness-tips" class="page-section">
       <div class="max-w-[1180px] mx-auto px-6 py-8">
         <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm mb-8">
-          <h1 class="font-poppins text-2xl font-extrabold text-navy-dark mb-2">Holistic Wellness Guidelines</h1>
-          <p class="text-sm text-gray-500">Actionable advice to sync your physical training and health parameters for optimal structural performance.</p>
+          <h1 class="font-poppins text-2xl font-extrabold text-navy-dark mb-2">Holistic Wellness Diagram & Boxes</h1>
+          <p class="text-sm text-gray-500">Structured parameters designed with custom illustrations for quick, actionable health lifestyle adaptations.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
-            <h3 class="font-poppins font-bold text-navy-dark text-lg mb-3 flex items-center gap-2">🍎 Nutrition Essentials</h3>
-            <ul class="space-y-3 text-sm text-gray-600">
-              <li class="flex items-start gap-2">
-                <span class="text-teal font-bold">✔</span> 
-                <span><strong>Eat Balanced Meals:</strong> Structure plates with a direct mix of lean clean proteins, complex carbs, and plenty of greens.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-teal font-bold">✔</span> 
-                <span><strong>Minimize Processed Sugar:</strong> Keep clean energy levels consistent and avoid sudden insulin spikes or fatigue.</span>
-              </li>
-            </ul>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm flex flex-col justify-between">
+            <div class="p-4">
+              <div class="w-full h-[120px] bg-gray-100 rounded-lg overflow-hidden mb-3">
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=300&q=80" alt="Nutrition Box" class="w-full h-full object-cover">
+              </div>
+              <span class="text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full uppercase">Nutrition</span>
+              <h3 class="font-poppins font-bold text-navy-dark text-base mt-2 mb-1">Balanced Plate</h3>
+              <p class="text-xs text-gray-500 leading-relaxed">Eat an even mix of lean protein, high fiber greens, and complex carbohydrates daily.</p>
+            </div>
           </div>
 
-          <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
-            <h3 class="font-poppins font-bold text-navy-dark text-lg mb-3 flex items-center gap-2">🏋️ Physical Exercise</h3>
-            <ul class="space-y-3 text-sm text-gray-600">
-              <li class="flex items-start gap-2">
-                <span class="text-teal font-bold">✔</span> 
-                <span><strong>Aerobic Action:</strong> Accumulate 150 minutes of weekly moderate cardiovascular exercise to keep blood vessels optimal.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-teal font-bold">✔</span> 
-                <span><strong>Dynamic Stretching:</strong> Prevent athletic micro-tears by keeping tissues pliable through consistent target flexibility sessions.</span>
-              </li>
-            </ul>
+          <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm flex flex-col justify-between">
+            <div class="p-4">
+              <div class="w-full h-[120px] bg-gray-100 rounded-lg overflow-hidden mb-3">
+                <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=300&q=80" alt="Physical Activity Box" class="w-full h-full object-cover">
+              </div>
+              <span class="text-[11px] font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full uppercase">Exercise</span>
+              <h3 class="font-poppins font-bold text-navy-dark text-base mt-2 mb-1">Daily Cardio Action</h3>
+              <p class="text-xs text-gray-500 leading-relaxed">Accumulate at least 20 to 30 minutes of elevated physical motion to secure healthy circulation.</p>
+            </div>
           </div>
+
+          <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm flex flex-col justify-between">
+            <div class="p-4">
+              <div class="w-full h-[120px] bg-gray-100 rounded-lg overflow-hidden mb-3">
+                <img src="glasswater.jpg" alt="Hydration Box" class="w-full h-full object-contain p-2 bg-white">
+              </div>
+              <span class="text-[11px] font-bold text-teal-600 bg-teal-50 px-2 py-0.5 rounded-full uppercase">Hydration</span>
+              <h3 class="font-poppins font-bold text-navy-dark text-base mt-2 mb-1">Target 8 Glasses</h3>
+              <p class="text-xs text-gray-500 leading-relaxed">Water maintains chemical equilibrium in body tissue. Track it constantly using our counters.</p>
+            </div>
+          </div>
+
+          <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm flex flex-col justify-between">
+            <div class="p-4">
+              <div class="w-full h-[120px] bg-gray-100 rounded-lg overflow-hidden mb-3">
+                <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=300&q=80" alt="Mindfulness Box" class="w-full h-full object-cover">
+              </div>
+              <span class="text-[11px] font-bold text-purple-600 bg-purple-50 px-2 py-0.5 rounded-full uppercase">Mindfulness</span>
+              <h3 class="font-poppins font-bold text-navy-dark text-base mt-2 mb-1">Structural Breaks</h3>
+              <p class="text-xs text-gray-500 leading-relaxed">Disconnect from academic screens every hour. Rest eyes and perform deep muscular stretching.</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
 
-    <!-- ================= PAGE 4: LEARNING RESOURCES ================= -->
     <div id="page-resources" class="page-section">
       <div class="max-w-[1180px] mx-auto px-6 py-8">
         <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm mb-8">
-          <h1 class="font-poppins text-2xl font-extrabold text-navy-dark mb-2">E-Learning Hub & Modules</h1>
-          <p class="text-sm text-gray-500">Access verified curriculum assets, official documentation modules, and external learning links.</p>
+          <h1 class="font-poppins text-2xl font-extrabold text-navy-dark mb-2">Verified Hub & Official Channels</h1>
+          <p class="text-sm text-gray-500">Access credible world-renowned medical databases with visual interface previews.</p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm flex flex-col justify-between">
-            <div>
-              <span class="text-xs font-bold text-purple-600 uppercase tracking-wider block mb-1">Module 1</span>
-              <h3 class="font-poppins font-bold text-navy-dark text-base mb-2">Introduction to Mental Health Fundamentals</h3>
-              <p class="text-xs text-gray-500 leading-relaxed mb-4">A starter guide explicitly mapping stress management markers, identity pillars, and cognitive care basics.</p>
-            </div>
-            <a href="https://www.who.int/health-topics/mental-health" target="_blank" class="block text-center text-xs font-bold bg-navy-dark hover:bg-navy text-white py-2 rounded-lg transition-colors">Access Module</a>
-          </div>
-
-          <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm flex flex-col justify-between">
-            <div>
-              <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider block mb-1">Guidebook</span>
-              <h3 class="font-poppins font-bold text-navy-dark text-base mb-2">Nutritional Tracking & Diet Planning</h3>
-              <p class="text-xs text-gray-500 leading-relaxed mb-4">Official parameters detailing dynamic macro balancing, micro-nutrient requirements, and clear caloric mapping templates.</p>
-            </div>
-            <a href="https://www.who.int/health-topics/nutrition" target="_blank" class="block text-center text-xs font-bold bg-navy-dark hover:bg-navy text-white py-2 rounded-lg transition-colors">Access Module</a>
-          </div>
-
-          <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm flex flex-col justify-between">
-            <div>
-              <span class="text-xs font-bold text-blue-600 uppercase tracking-wider block mb-1">Audio-Visual</span>
-              <h3 class="font-poppins font-bold text-navy-dark text-base mb-2">Guided Breathing & Heart Rate Regulation</h3>
-              <p class="text-xs text-gray-500 leading-relaxed mb-4">Practical visual patterns mapping systematic box breathing to down-regulate nervous overdrive during exam weeks.</p>
-            </div>
-            <a href="#" onclick="alert('Systematic Breathing Guide: Inhale for 4s, Hold for 4s, Exhale for 4s, Hold for 4s.')" class="block text-center text-xs font-bold bg-navy-dark hover:bg-navy text-white py-2 rounded-lg transition-colors">Launch Resource</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ================= PAGE 5: ABOUT US ================= -->
-    <div id="page-about" class="page-section">
-      <div class="max-w-[800px] mx-auto px-6 py-12">
-        <div class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-          <div class="text-center mb-6">
-            <span class="text-xs font-bold bg-mint text-teal px-3 py-1.5 rounded-full uppercase tracking-wider">Our Mission</span>
-            <h1 class="font-poppins text-3xl font-extrabold text-navy-dark mt-3">About Us</h1>
-          </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
           
-          <div class="space-y-4 text-sm leading-relaxed text-gray-600">
-            <p>Welcome to our wellness platform, a space dedicated to promoting healthier lifestyles through trusted, evidence-based information and practical wellness resources. We believe that good health includes both physical and mental well-being, and that small, positive lifestyle changes can have a meaningful impact on overall quality of life.</p>
-            <p>Our mission is to educate, inspire, and empower individuals by providing accessible wellness tips, mental health learning resources, and reliable health information from respected organizations. We aim to encourage healthy habits such as staying active, eating nutritious foods, getting enough sleep, managing stress, and caring for emotional well-being.</p>
-            <p>We are committed to creating a supportive and informative environment where everyone can learn, grow, and make informed decisions about their health. Whether you are looking for simple wellness advice or trustworthy mental health resources, our goal is to help you take positive steps toward a healthier and more balanced life.</p>
-            <div class="p-4 bg-mint rounded-xl border border-teal/20 text-center font-medium text-navy-dark mt-6">
-              "Together, we believe that wellness begins with knowledge, healthy choices, and consistent self-care."
+          <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="w-full h-[140px] bg-gray-100 border-b border-gray-100">
+                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=400&q=80" alt="WHO Website Mockup" class="w-full h-full object-cover">
+              </div>
+              <div class="p-5">
+                <h3 class="font-poppins font-bold text-navy-dark text-base mb-1.5">World Health Organization (WHO)</h3>
+                <p class="text-xs text-gray-500 leading-relaxed">The global agency coordinating international public health frameworks, global mental health stats, and guidelines.</p>
+              </div>
+            </div>
+            <div class="px-5 pb-5">
+              <a href="https://www.who.int" target="_blank" class="block text-center text-xs font-bold bg-navy-dark hover:bg-navy text-white py-2 rounded-lg transition-colors">Visit Official Site</a>
             </div>
           </div>
+
+          <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="w-full h-[140px] bg-gray-100 border-b border-gray-100">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=400&q=80" alt="DOH Website Mockup" class="w-full h-full object-cover">
+              </div>
+              <div class="p-5">
+                <h3 class="font-poppins font-bold text-navy-dark text-base mb-1.5">Department of Health (DOH PH)</h3>
+                <p class="text-xs text-gray-500 leading-relaxed">Official national medical portal of the Philippines providing local health alerts, mental health acts, and community directives.</p>
+              </div>
+            </div>
+            <div class="px-5 pb-5">
+              <a href="https://doh.gov.ph" target="_blank" class="block text-center text-xs font-bold bg-navy-dark hover:bg-navy text-white py-2 rounded-lg transition-colors">Visit Official Site</a>
+            </div>
+          </div>
+
+          <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="w-full h-[140px] bg-gray-100 border-b border-gray-100">
+                <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=400&q=80" alt="NIMH Website Mockup" class="w-full h-full object-cover">
+              </div>
+              <div class="p-5">
+                <h3 class="font-poppins font-bold text-navy-dark text-base mb-1.5">National Institute of Mental Health</h3>
+                <p class="text-xs text-gray-500 leading-relaxed">The largest scientific research engine explicitly dedicated to understanding psychological transformations and clinical therapy charts.</p>
+              </div>
+            </div>
+            <div class="px-5 pb-5">
+              <a href="https://www.nimh.nih.gov" target="_blank" class="block text-center text-xs font-bold bg-navy-dark hover:bg-navy text-white py-2 rounded-lg transition-colors">Visit Official Site</a>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
 
   </div>
 
-  <!-- FOOTER -->
-  <footer class="bg-navy text-[#b9c9dc] pt-9 pb-5 text-sm text-center md:text-left mt-12">
+  <footer class="bg-navy text-[#b9c9dc] pt-9 pb-5 text-sm mt-12" id="footer-contact">
     <div class="max-w-[1180px] mx-auto px-6">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-3.5 pb-4 border-b border-[#24405F]">
-        <div class="flex gap-5">
-          <a href="#" class="text-[#b9c9dc] no-underline hover:text-white transition-colors">FAQ</a>
-          <a href="#" class="text-[#b9c9dc] no-underline hover:text-white transition-colors">Privacy Policy</a>
-          <a href="#" class="text-[#b9c9dc] no-underline hover:text-white transition-colors">Contact</a>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-[#24405F]">
+        
+        <div class="flex items-center gap-4">
+          <div class="w-[100px] h-[120px] bg-white rounded-xl p-1 flex items-center justify-center flex-none overflow-hidden shadow-inner">
+            <img src="contact.jpg" alt="Contact Us Portrait Banner" class="w-full h-full object-cover rounded-lg">
+          </div>
+          <div>
+            <div class="w-[65px] h-[35px] bg-white/10 rounded p-0.5 mb-2 flex items-center justify-center">
+              <img src="mapeh.jpg" alt="MAPEH Logo Footer" class="w-full h-full object-contain">
+            </div>
+            <h4 class="text-white font-poppins font-bold text-sm tracking-wide">MAPEH E-HEALTH</h4>
+            <p class="text-xs text-[#8CA0B8] leading-tight">Empowering Caloocan students with accessible health insights.</p>
+          </div>
         </div>
-        <div class="flex gap-3">
-          <span class="w-[30px] h-[30px] rounded-full bg-[#1E3A5F] flex items-center justify-center text-xs text-white font-bold cursor-pointer hover:bg-teal transition-colors">f</span>
-          <span class="w-[30px] h-[30px] rounded-full bg-[#1E3A5F] flex items-center justify-center text-xs text-white font-bold cursor-pointer hover:bg-teal transition-colors">ig</span>
-          <span class="w-[30px] h-[30px] rounded-full bg-[#1E3A5F] flex items-center justify-center text-xs text-white font-bold cursor-pointer hover:bg-teal transition-colors">yt</span>
+
+        <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+          <div>
+            <span class="block text-xs font-bold uppercase tracking-wider text-teal mb-1.5">📧 GMAIL ADDRESS</span>
+            <span class="text-xs text-white block font-mono">mapeh.ehealth.portal@gmail.com</span>
+          </div>
+          <div>
+            <span class="block text-xs font-bold uppercase tracking-wider text-teal mb-1.5">📞 CONTACT NUMBER</span>
+            <span class="text-xs text-white block font-mono">+63 912 345 6789</span>
+          </div>
+          <div>
+            <span class="block text-xs font-bold uppercase tracking-wider text-teal mb-1.5">📱 CONNECT VIA FB</span>
+            <a href="https://facebook.com" target="_blank" class="text-xs text-blue-400 font-semibold hover:underline block">fb.com/MapehEHealthPortal</a>
+          </div>
         </div>
+
       </div>
-      <div class="flex items-center gap-2 justify-center pt-4 text-xs text-[#8CA0B8]">
-        🛡️ MAPEH E-Health Portal
+      
+      <div class="flex flex-col sm:flex-row items-center justify-between pt-4 text-xs text-[#8CA0B8]">
+        <div>🛡️ MAPEH E-Health Portal — Caloocan Division Project</div>
+        <div class="mt-2 sm:mt-0">Educational Safety & Wellness Dashboard © 2026</div>
       </div>
     </div>
   </footer>
 
-  <!-- ROUTING ENGINE LOGIC -->
   <script>
     function switchPage(pageId) {
       document.querySelectorAll('.page-section').forEach(section => {
@@ -380,14 +386,12 @@
       });
 
       const namesMapping = {
-        'home': 'Mental Health Dashboard',
-        'my-health': 'My Health Tracker',
-        'wellness-tips': 'Wellness Tips',
-        'resources': 'Learning Resources',
-        'about': 'About Us'
+        'my-health': 'Home & My Health Tracker',
+        'wellness-tips': 'Wellness Tips Diagram',
+        'resources': 'Learning Resources Hub'
       };
 
-      document.getElementById('breadcrumb-current').innerText = namesMapping[pageId] || 'Mental Health';
+      document.getElementById('breadcrumb-current').innerText = namesMapping[pageId] || 'Dashboard';
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
